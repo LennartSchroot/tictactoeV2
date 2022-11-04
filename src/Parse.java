@@ -44,11 +44,11 @@ public class Parse {
                 System.out.printf("%s,", splitMsg[i]);
             System.out.println();
         }
-        if(splitMsg[0].equals("OK")){
+        /*if(splitMsg[0].equals("OK")){ // no real reason for OK checker yet
             for(int i = 0; i < splitMsg.length; i++)
                 System.out.printf("%s ", splitMsg[i]);
             System.out.println();
-        }
+        }*/
         if(splitMsg[0].equals("move")){
             for(int i = 0; i < splitMsg.length; i++)
                 System.out.printf("%s,", splitMsg[i]);

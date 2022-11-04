@@ -32,7 +32,7 @@ public class Show {
         System.out.printf("%s", msg);
     }
     public void tournamentSubscription(String name){
-        System.out.printf("Logged in with name: %s\n\n", name);
+        System.out.printf("Logged in with name: %s\nWaiting for tournament to start! \n\n", name);
     }
     public void instructions(){
         boolean state = true;
