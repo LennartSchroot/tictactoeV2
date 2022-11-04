@@ -8,8 +8,19 @@ class TournamentLoop extends Thread {
     public void run() {
         ConnectThread communication = new ConnectThread();
         communication.start();
-        state = true;
         try {
+            sleep(100);
+            if(communication.isAlive()){
+                state = true;
+                System.out.println("ISALIVE ?>>>!>!>!>>");
+            }else{
+                System.out.println("Could not make connection\n"
+                        +"Start server by opening cmd \n"
+                        +"move to path of ~/tictactoeV2/server\n"
+                        +"run server with: java -jar server.jar\n");
+                state = false;
+                show.showMenu();
+            }
             while (state) {
                 if (communication.isReady()) {
                     parser.parse(communication.getIncoming()); //parses input and does things accordingly

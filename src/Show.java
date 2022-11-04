@@ -24,11 +24,11 @@ public class Show {
     }
 
     public void showMenu(){
-        String msg ="While in game or tournament mode write EXIT and enter to go back to main menu"
-                    + "To play a game of Eieren, kaas & boter vs the ai. Press 1 and enter.\n"
-                    + "For instructions on how to play. Press 2 and enter.\n"
-                    + "To subscribe to tournament press 3.\n"
-                    + "To Exit this program. Press 9 and enter.\n";
+        String msg ="While in game or tournament mode write EXIT and press enter to go back to main \n\n"
+                    + "To play a game of Eieren, kaas & boter vs the ai. type 1 and press enter.\n"
+                    + "For instructions on how to play. type 2 and press enter.\n"
+                    + "To subscribe to tournament type 3 and press enter.\n"
+                    + "To Exit this program. type EXIT and press enter.\n";
         System.out.printf("%s", msg);
     }
     public void tournamentSubscription(String name){

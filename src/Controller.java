@@ -34,7 +34,7 @@ class Controller extends Thread{
                                 else
                                     tournamentLoop.start();
                                 break;
-                            case "9":
+                            case "EXIT":
                                 state = false;
                                 break;
                             default:
