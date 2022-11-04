@@ -31,7 +31,9 @@ class Controller extends Thread{
                             case "3":
                                 tournamentLoop = new TournamentLoop();
                                 tournamentLoop.start();
-                                status = 3;
+                                sleep(200);
+                                if(tournamentLoop.gettState())
+                                    status = 3;
                                 break;
                             case "EXIT":
                                 state = false;

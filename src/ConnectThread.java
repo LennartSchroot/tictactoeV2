@@ -23,7 +23,6 @@ class ConnectThread extends Thread{
                 if (!command.isEmpty()) {
                     out.println(String.format("%s", command.poll()));
                 }
-                sleep(100);
             }
             socket.close();
             System.out.println("closed the socket");

@@ -1,6 +1,6 @@
 class TournamentLoop extends Thread {
     private boolean state;
-    private String playerName = "avenged";
+    private String playerName = "Baguette";
     private Board board = new Board();
     private Ai ai = new Ai();
     private Show show = new Show();
@@ -18,6 +18,7 @@ class TournamentLoop extends Thread {
                         +"move to path of ~/tictactoeV2/server\n"
                         +"run server with: java -jar server.jar\n");
                 state = false;
+                show.showMenu();
             }
             while (state) {
                 if (communication.isReady()) {
@@ -51,11 +52,15 @@ class TournamentLoop extends Thread {
                 }
                 sleep(100);
             }
-            communication.setState();
+            if(communication.isAlive())
+                 communication.setState();
         } catch(Exception e){
             System.out.printf("Tournament loop failed");
             System.out.println(e);
         }
+    }
+    public boolean gettState(){
+        return state;
     }
     public void setState(){
         state = false;
