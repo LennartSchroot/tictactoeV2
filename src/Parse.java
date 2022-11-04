@@ -13,6 +13,8 @@ public class Parse {
     private String playerName;
     private boolean checkLogin;
     private boolean loginOK;
+    private boolean moveOkay;
+    private boolean matchFound;
     public Parse(String name){
         loginReady = false;
         myTurn = false;
@@ -20,6 +22,8 @@ public class Parse {
         gameEnd = false;
         moveMade = false;
         loginOK = false;
+        moveOkay = false;
+        matchFound = false;
         playerName = name;
     }
     public void parse(String msg) {
@@ -36,8 +40,10 @@ public class Parse {
             checkLogin = true;
             loginReady = true;
         }
-        if(checkLogin && splitMsg[0].equals("OK"))
+        if(checkLogin && splitMsg[0].equals("OK")) {
             loginOK = true;
+            checkLogin = false;
+        }
         //other code
         if(splitMsg[0].equals("ERR")){
             for(int i = 0; i < splitMsg.length; i++)
@@ -57,6 +63,7 @@ public class Parse {
         if(splitMsg[0].equals("SVR")) {
             if (splitMsg[1].equals("GAME")) {
                 if (splitMsg[2].equals("MATCH")) {
+                    matchFound = true;
                     if (splitMsg[3].equals("PLAYERTOMOVE:")) {
                         if (playerName.equals(splitMsg[4])){
                             myPiece = 1; //set to 1 for X
@@ -79,6 +86,7 @@ public class Parse {
                         moveByPLayer = splitMsg[4];
                         if(moveByPLayer.equals(playerName)){
                             System.out.println("SERVER HAS ACCEPTED OUR MOVE");
+                            moveOkay = true;
                         }else{
                             moveMade = true;
                         }
@@ -112,11 +120,11 @@ public class Parse {
     public void setMyTurn(){
         myTurn = false;
     }
-    public boolean getOpponentTurn(){
-        return opponentTurn;
+    public String getOpponent(){
+        return opponent;
     }
-    public void setOpponentTurn(){
-        opponentTurn = false;
+    public String gameType(){
+        return gameType;
     }
     public boolean getGameEnd(){
         return gameEnd;
@@ -133,9 +141,6 @@ public class Parse {
     public int getMove() {
         return move;
     }
-    public String getMoveByPLayer() {
-        return moveByPLayer;
-    }
     public int getMyPiece(){
         return myPiece;
     }
@@ -147,5 +152,17 @@ public class Parse {
     }
     public void setLoginOK(){
         loginOK = false;
+    }
+    public boolean getMoveOkay(){
+        return moveOkay;
+    }
+    public void setMoveOKay(){
+        moveOkay = false;
+    }
+    public boolean matchFound(){
+        return matchFound;
+    }
+    public void setMatchFound(){
+        matchFound = false;
     }
 }

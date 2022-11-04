@@ -32,6 +32,10 @@ class TournamentLoop extends Thread {
                     show.tournamentSubscription(playerName);
                     parser.setLoginOK();
                 }
+                if(parser.matchFound()){
+                    show.challengeStarted(parser.getOpponent(), parser.gameType());
+                    parser.setMatchFound();
+                }
                 if(parser.moveFromServer()){
                     board.setAtPos(parser.getMove(), parser.getOpponentPiece());// put move in board// made by this player
                     show.boardToConsole(board);
@@ -40,8 +44,11 @@ class TournamentLoop extends Thread {
                 if(parser.getMyTurn()){
                     communication.SetCommand(String.format("move %d", ai.turn(board, parser.getMyPiece()))); // send move
                     System.out.println();
-                    show.boardToConsole(board);
                     parser.setMyTurn(); // set myTurn to false
+                }
+                if(parser.getMoveOkay()){
+                    show.boardToConsole(board);
+                    parser.setMoveOKay();
                 }
                 if(parser.getGameEnd()){
                     //display result

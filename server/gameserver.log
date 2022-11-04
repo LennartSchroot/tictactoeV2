@@ -144,3 +144,191 @@
 2022-11-04 16:33:12.328  INFO 12916 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'messageBrokerTaskScheduler'
 2022-11-04 16:33:12.329  INFO 12916 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'clientOutboundChannelExecutor'
 2022-11-04 16:33:12.329  INFO 12916 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'clientInboundChannelExecutor'
+2022-11-04 16:40:32.392  INFO 13964 --- [main] nl.hanze.newgameserver.Main              : Starting Main on Gerco-Desktop with PID 13964 (C:\Users\CreationStation\Documents\Oop\tijdelijk\tictactoeV2\server\server.jar started by CreationStation in C:\Users\CreationStation\Documents\Oop\tijdelijk\tictactoeV2\server)
+2022-11-04 16:40:32.397  INFO 13964 --- [main] nl.hanze.newgameserver.Main              : No active profile set, falling back to default profiles: default
+2022-11-04 16:40:34.215  INFO 13964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-11-04 16:40:34.230  INFO 13964 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-04 16:40:34.230  INFO 13964 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-11-04 16:40:34.307  INFO 13964 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-04 16:40:34.308  INFO 13964 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1784 ms
+2022-11-04 16:40:34.464  INFO 13964 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientInboundChannelExecutor'
+2022-11-04 16:40:34.469  INFO 13964 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientOutboundChannelExecutor'
+2022-11-04 16:40:34.512  INFO 13964 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'messageBrokerTaskScheduler'
+2022-11-04 16:40:34.576  INFO 13964 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'brokerChannelExecutor'
+2022-11-04 16:40:34.884  INFO 13964 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
+2022-11-04 16:40:35.048  INFO 13964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-11-04 16:40:35.050  INFO 13964 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2022-11-04 16:40:35.050  INFO 13964 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2022-11-04 16:40:35.051  INFO 13964 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2022-11-04 16:40:35.065  INFO 13964 --- [main] nl.hanze.newgameserver.Main              : Started Main in 3.452 seconds (JVM running for 4.084)
+2022-11-04 16:40:35.071  INFO 13964 --- [main] main                                     : gameserver is now listening on port 7789
+2022-11-04 16:40:37.700  INFO 13964 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-04 16:40:37.701  INFO 13964 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-04 16:40:37.708  INFO 13964 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2022-11-04 16:40:39.675  INFO 13964 --- [http-nio-8081-exec-4] api-controller                           : JWTVerificationException: The Token's Signature resulted invalid when verified using the Algorithm: HmacSHA512
+2022-11-04 16:40:39.675  INFO 13964 --- [http-nio-8081-exec-5] api-controller                           : JWTVerificationException: The Token's Signature resulted invalid when verified using the Algorithm: HmacSHA512
+2022-11-04 16:40:41.944  INFO 13964 --- [http-nio-8081-exec-7] api-controller                           : hash of entered password: $2a$10$8SRwfMpWzab3qlO8TOlCnOVgHjqrqFMB3YjTPmzfV6M5iOsn6rj62
+2022-11-04 16:40:45.482  INFO 13964 --- [http-nio-8081-exec-8] api-controller                           : hash of entered password: $2a$10$aVV9I0VvMSZYVx3BliKNz.MGSrZP9TXZXK72FzFGh5nEGD044fbNi
+2022-11-04 16:40:48.353  INFO 13964 --- [SpringContextShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2022-11-04 16:40:48.353  INFO 13964 --- [SpringContextShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2022-11-04 16:40:48.354  INFO 13964 --- [SpringContextShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2022-11-04 16:40:48.431  INFO 13964 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'brokerChannelExecutor'
+2022-11-04 16:40:48.432  INFO 13964 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2022-11-04 16:40:48.433  INFO 13964 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2022-11-04 16:40:48.434  INFO 13964 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'clientInboundChannelExecutor'
+2022-11-04 16:41:02.280  INFO 15200 --- [main] nl.hanze.newgameserver.Main              : Starting Main on Gerco-Desktop with PID 15200 (C:\Users\CreationStation\Documents\Oop\tijdelijk\tictactoeV2\server\server.jar started by CreationStation in C:\Users\CreationStation\Documents\Oop\tijdelijk\tictactoeV2\server)
+2022-11-04 16:41:02.286  INFO 15200 --- [main] nl.hanze.newgameserver.Main              : No active profile set, falling back to default profiles: default
+2022-11-04 16:41:03.879  INFO 15200 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-11-04 16:41:03.898  INFO 15200 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-04 16:41:03.899  INFO 15200 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-11-04 16:41:03.978  INFO 15200 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-04 16:41:03.978  INFO 15200 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1585 ms
+2022-11-04 16:41:04.144  INFO 15200 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientInboundChannelExecutor'
+2022-11-04 16:41:04.149  INFO 15200 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientOutboundChannelExecutor'
+2022-11-04 16:41:04.181  INFO 15200 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'messageBrokerTaskScheduler'
+2022-11-04 16:41:04.256  INFO 15200 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'brokerChannelExecutor'
+2022-11-04 16:41:04.593  INFO 15200 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
+2022-11-04 16:41:04.771  INFO 15200 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-11-04 16:41:04.773  INFO 15200 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2022-11-04 16:41:04.773  INFO 15200 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2022-11-04 16:41:04.773  INFO 15200 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2022-11-04 16:41:04.787  INFO 15200 --- [main] nl.hanze.newgameserver.Main              : Started Main in 3.404 seconds (JVM running for 4.055)
+2022-11-04 16:41:04.796  INFO 15200 --- [main] main                                     : gameserver is now listening on port 7789
+2022-11-04 16:41:04.948  INFO 15200 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-04 16:41:04.949  INFO 15200 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-04 16:41:04.957  INFO 15200 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2022-11-04 16:41:05.230  INFO 15200 --- [http-nio-8081-exec-1] api-controller                           : hash of entered password: $2a$10$2dAq.jIX2Ly32AYA/fRxd.1MuP0ZX5HyeLsyn.qpE5C7oGubS50W2
+2022-11-04 16:41:05.375  INFO 15200 --- [http-nio-8081-exec-2] api-controller                           : decoded JWT token: com.auth0.jwt.JWTDecoder@10fb7491
+2022-11-04 16:41:12.255  INFO 15200 --- [http-nio-8081-exec-4] api-controller                           : decoded JWT token: com.auth0.jwt.JWTDecoder@6a460d31
+2022-11-04 16:41:12.425  INFO 15200 --- [http-nio-8081-exec-2] api-controller                           : decoded JWT token: com.auth0.jwt.JWTDecoder@3cee5867
+2022-11-04 16:41:14.671  INFO 15200 --- [main] main                                     : new client connected from /127.0.0.1:1720
+2022-11-04 16:41:14.882  INFO 15200 --- [Thread-3] client-thread <not logged in>            : issues command: 'login Baguette'
+2022-11-04 16:41:18.299  INFO 15200 --- [main] main                                     : new client connected from /127.0.0.1:1723
+2022-11-04 16:41:26.176  INFO 15200 --- [http-nio-8081-exec-5] api-controller                           : decoded JWT token: com.auth0.jwt.JWTDecoder@19cb36c2
+2022-11-04 16:41:26.177  INFO 15200 --- [http-nio-8081-exec-5] tournament-manager                       : start tournament 
+2022-11-04 16:41:29.582  INFO 15200 --- [Thread-4] client-thread <not logged in>            : issues command: 'login test'
+2022-11-04 16:41:31.646  INFO 15200 --- [http-nio-8081-exec-4] api-controller                           : decoded JWT token: com.auth0.jwt.JWTDecoder@2b7b070a
+2022-11-04 16:41:31.647  INFO 15200 --- [http-nio-8081-exec-4] tournament-manager                       : start tournament 
+2022-11-04 16:41:31.649  INFO 15200 --- [http-nio-8081-exec-4] tournament-manager                       : players in tournament pool: 2
+2022-11-04 16:41:31.663  INFO 15200 --- [http-nio-8081-exec-4] tournament 1                             : next round starts
+2022-11-04 16:41:31.666  INFO 15200 --- [http-nio-8081-exec-4] tournament 1                             : next match: [Baguette vs test]
+2022-11-04 16:41:31.689  INFO 15200 --- [http-nio-8081-exec-4] game [1,test,Baguette]                   : started
+2022-11-04 16:41:31.691  INFO 15200 --- [http-nio-8081-exec-4] tournament 1                             : game started
+2022-11-04 16:41:35.449  INFO 15200 --- [Thread-4] client-thread test                       : issues command: 'move 0'
+2022-11-04 16:41:35.690  INFO 15200 --- [Thread-3] client-thread Baguette                   : issues command: 'move 3'
+2022-11-04 16:41:39.559  INFO 15200 --- [Thread-4] client-thread test                       : issues command: 'move 1'
+2022-11-04 16:41:39.683  INFO 15200 --- [Thread-3] client-thread Baguette                   : issues command: 'move 7'
+2022-11-04 16:41:43.863  INFO 15200 --- [Thread-4] client-thread test                       : issues command: 'move 8'
+2022-11-04 16:41:43.991  INFO 15200 --- [Thread-3] client-thread Baguette                   : issues command: 'move 5'
+2022-11-04 16:41:54.001  INFO 15200 --- [Timer-6] game [1,test,Baguette]                   : winner: Baguette; Turn timelimit reached
+2022-11-04 16:41:54.007  INFO 15200 --- [Timer-6] tournament 1                             : game [Baguette vs test] result: Baguette
+2022-11-04 16:41:54.010  INFO 15200 --- [Timer-6] tournament 1                             : finished
+2022-11-04 16:42:04.256  INFO 15200 --- [MessageBroker-2] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[1 current WS(1)-HttpStream(0)-HttpPoll(0), 1 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(1)-CONNECTED(1)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 16, active threads = 0, queued tasks = 0, completed tasks = 48], outboundChannel[pool size = 16, active threads = 0, queued tasks = 0, completed tasks = 22], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 2, completed tasks = 11]
+2022-11-04 16:45:41.756  WARN 15200 --- [Thread-3] client-thread Baguette                   : Server exception: Connection reset, disconnecting client
+2022-11-04 16:45:49.852  INFO 15200 --- [main] main                                     : new client connected from /127.0.0.1:1731
+2022-11-04 16:45:50.060  INFO 15200 --- [Thread-12] client-thread <not logged in>            : issues command: 'login Baguette'
+2022-11-04 16:45:50.062  INFO 15200 --- [Thread-12] login-command                            : reviving Baguette from offline player list! Welcome back.
+2022-11-04 16:45:53.208  INFO 15200 --- [http-nio-8081-exec-10] api-controller                           : decoded JWT token: com.auth0.jwt.JWTDecoder@6cd6797e
+2022-11-04 16:45:53.209  INFO 15200 --- [http-nio-8081-exec-4] api-controller                           : decoded JWT token: com.auth0.jwt.JWTDecoder@18f175e6
+2022-11-04 16:45:55.339  INFO 15200 --- [http-nio-8081-exec-6] api-controller                           : decoded JWT token: com.auth0.jwt.JWTDecoder@3545c20
+2022-11-04 16:45:55.340  INFO 15200 --- [http-nio-8081-exec-6] tournament-manager                       : start tournament 
+2022-11-04 16:45:55.341  INFO 15200 --- [http-nio-8081-exec-6] tournament-manager                       : tournament state:FINISHED
+2022-11-04 16:45:55.341  INFO 15200 --- [http-nio-8081-exec-6] tournament-manager                       : players in tournament pool: 2
+2022-11-04 16:45:55.343  INFO 15200 --- [http-nio-8081-exec-6] tournament 2                             : next round starts
+2022-11-04 16:45:55.344  INFO 15200 --- [http-nio-8081-exec-6] tournament 2                             : next match: [Baguette vs test]
+2022-11-04 16:45:55.346  INFO 15200 --- [http-nio-8081-exec-6] game [2,test,Baguette]                   : started
+2022-11-04 16:45:55.347  INFO 15200 --- [http-nio-8081-exec-6] tournament 2                             : game started
+2022-11-04 16:45:58.902  INFO 15200 --- [Thread-4] client-thread test                       : issues command: 'move 0'
+2022-11-04 16:45:59.105  INFO 15200 --- [Thread-12] client-thread Baguette                   : issues command: 'move 7'
+2022-11-04 16:46:01.652  INFO 15200 --- [Thread-4] client-thread test                       : issues command: 'move 4'
+2022-11-04 16:46:01.859  INFO 15200 --- [Thread-12] client-thread Baguette                   : issues command: 'move 1'
+2022-11-04 16:46:05.191  INFO 15200 --- [Thread-4] client-thread test                       : issues command: 'move 3'
+2022-11-04 16:46:05.396  INFO 15200 --- [Thread-12] client-thread Baguette                   : issues command: 'move 8'
+2022-11-04 16:46:10.484  INFO 15200 --- [Thread-4] client-thread test                       : issues command: 'move 2'
+2022-11-04 16:46:10.686  INFO 15200 --- [Thread-12] client-thread Baguette                   : issues command: 'move 6'
+2022-11-04 16:46:10.687  INFO 15200 --- [Thread-12] game [2,test,Baguette]                   : winner: Baguette; 
+2022-11-04 16:46:10.689  INFO 15200 --- [Thread-12] tournament 2                             : game [Baguette vs test] result: Baguette
+2022-11-04 16:46:10.690  INFO 15200 --- [Thread-12] tournament 2                             : finished
+2022-11-04 16:50:24.618  WARN 15200 --- [Thread-12] client-thread Baguette                   : Server exception: Connection reset, disconnecting client
+2022-11-04 16:50:31.270  INFO 15200 --- [main] main                                     : new client connected from /127.0.0.1:1748
+2022-11-04 16:50:31.477  INFO 15200 --- [Thread-21] client-thread <not logged in>            : issues command: 'login Baguette'
+2022-11-04 16:50:31.478  INFO 15200 --- [Thread-21] login-command                            : reviving Baguette from offline player list! Welcome back.
+2022-11-04 16:50:34.290  INFO 15200 --- [http-nio-8081-exec-8] api-controller                           : decoded JWT token: com.auth0.jwt.JWTDecoder@428ef7b
+2022-11-04 16:50:34.290  INFO 15200 --- [http-nio-8081-exec-3] api-controller                           : decoded JWT token: com.auth0.jwt.JWTDecoder@19ef6c62
+2022-11-04 16:50:36.277  INFO 15200 --- [http-nio-8081-exec-7] api-controller                           : decoded JWT token: com.auth0.jwt.JWTDecoder@5d5f0415
+2022-11-04 16:50:36.278  INFO 15200 --- [http-nio-8081-exec-7] tournament-manager                       : start tournament 
+2022-11-04 16:50:36.279  INFO 15200 --- [http-nio-8081-exec-7] tournament-manager                       : tournament state:FINISHED
+2022-11-04 16:50:36.280  INFO 15200 --- [http-nio-8081-exec-7] tournament-manager                       : players in tournament pool: 2
+2022-11-04 16:50:36.280  INFO 15200 --- [http-nio-8081-exec-7] tournament 3                             : next round starts
+2022-11-04 16:50:36.281  INFO 15200 --- [http-nio-8081-exec-7] tournament 3                             : next match: [Baguette vs test]
+2022-11-04 16:50:36.284  INFO 15200 --- [http-nio-8081-exec-7] game [3,test,Baguette]                   : started
+2022-11-04 16:50:36.285  INFO 15200 --- [http-nio-8081-exec-7] tournament 3                             : game started
+2022-11-04 16:50:40.033  INFO 15200 --- [Thread-4] client-thread test                       : issues command: 'move 1'
+2022-11-04 16:50:40.277  INFO 15200 --- [Thread-21] client-thread Baguette                   : issues command: 'move 6'
+2022-11-04 16:50:48.356  INFO 15200 --- [Thread-4] client-thread test                       : issues command: 'move 0'
+2022-11-04 16:50:48.481  INFO 15200 --- [Thread-21] client-thread Baguette                   : issues command: 'move 8'
+2022-11-04 16:50:53.437  INFO 15200 --- [Thread-4] client-thread test                       : issues command: 'move 7'
+2022-11-04 16:50:53.563  INFO 15200 --- [Thread-21] client-thread Baguette                   : issues command: 'move 3'
+2022-11-04 16:50:56.753  INFO 15200 --- [Thread-4] client-thread test                       : issues command: 'move 4'
+2022-11-04 16:50:56.754  INFO 15200 --- [Thread-4] game [3,test,Baguette]                   : winner: test; 
+2022-11-04 16:50:56.755  INFO 15200 --- [Thread-4] tournament 3                             : game [Baguette vs test] result: test
+2022-11-04 16:50:56.756  INFO 15200 --- [Thread-4] tournament 3                             : finished
+2022-11-04 16:59:20.097  WARN 15200 --- [Thread-21] client-thread Baguette                   : Server exception: Connection reset, disconnecting client
+2022-11-04 16:59:27.147  INFO 15200 --- [main] main                                     : new client connected from /127.0.0.1:4941
+2022-11-04 16:59:27.348  INFO 15200 --- [Thread-29] client-thread <not logged in>            : issues command: 'login Baguette'
+2022-11-04 16:59:27.349  INFO 15200 --- [Thread-29] login-command                            : reviving Baguette from offline player list! Welcome back.
+2022-11-04 16:59:31.911  INFO 15200 --- [http-nio-8081-exec-10] api-controller                           : decoded JWT token: com.auth0.jwt.JWTDecoder@6c7bad3f
+2022-11-04 16:59:31.911  INFO 15200 --- [http-nio-8081-exec-1] api-controller                           : decoded JWT token: com.auth0.jwt.JWTDecoder@1447664e
+2022-11-04 16:59:33.804  INFO 15200 --- [http-nio-8081-exec-2] api-controller                           : decoded JWT token: com.auth0.jwt.JWTDecoder@2ac523db
+2022-11-04 16:59:33.805  INFO 15200 --- [http-nio-8081-exec-2] tournament-manager                       : start tournament 
+2022-11-04 16:59:33.805  INFO 15200 --- [http-nio-8081-exec-2] tournament-manager                       : tournament state:FINISHED
+2022-11-04 16:59:33.806  INFO 15200 --- [http-nio-8081-exec-2] tournament-manager                       : players in tournament pool: 2
+2022-11-04 16:59:33.807  INFO 15200 --- [http-nio-8081-exec-2] tournament 4                             : next round starts
+2022-11-04 16:59:33.808  INFO 15200 --- [http-nio-8081-exec-2] tournament 4                             : next match: [Baguette vs test]
+2022-11-04 16:59:33.812  INFO 15200 --- [http-nio-8081-exec-2] game [4,Baguette,test]                   : started
+2022-11-04 16:59:33.814  INFO 15200 --- [http-nio-8081-exec-2] tournament 4                             : game started
+2022-11-04 16:59:33.991  INFO 15200 --- [Thread-29] client-thread Baguette                   : issues command: 'move 7'
+2022-11-04 16:59:39.055  WARN 15200 --- [Thread-29] client-thread Baguette                   : Server exception: Connection reset, disconnecting client
+2022-11-04 16:59:39.057  INFO 15200 --- [Thread-29] game [4,Baguette,test]                   : winner: test; Player disconnected
+2022-11-04 16:59:39.062  INFO 15200 --- [Thread-29] tournament 4                             : game [Baguette vs test] result: test
+2022-11-04 16:59:39.065  INFO 15200 --- [Thread-29] tournament 4                             : finished
+2022-11-04 17:00:52.632  INFO 15200 --- [main] main                                     : new client connected from /127.0.0.1:4950
+2022-11-04 17:00:52.827  INFO 15200 --- [Thread-32] client-thread <not logged in>            : issues command: 'login Baguette'
+2022-11-04 17:00:52.828  INFO 15200 --- [Thread-32] login-command                            : reviving Baguette from offline player list! Welcome back.
+2022-11-04 17:00:55.002  INFO 15200 --- [http-nio-8081-exec-8] api-controller                           : decoded JWT token: com.auth0.jwt.JWTDecoder@7354fbef
+2022-11-04 17:00:55.002  INFO 15200 --- [http-nio-8081-exec-4] api-controller                           : decoded JWT token: com.auth0.jwt.JWTDecoder@2796e02d
+2022-11-04 17:00:56.907  INFO 15200 --- [http-nio-8081-exec-7] api-controller                           : decoded JWT token: com.auth0.jwt.JWTDecoder@60e913e8
+2022-11-04 17:00:56.908  INFO 15200 --- [http-nio-8081-exec-7] tournament-manager                       : start tournament 
+2022-11-04 17:00:56.910  INFO 15200 --- [http-nio-8081-exec-7] tournament-manager                       : tournament state:FINISHED
+2022-11-04 17:00:56.910  INFO 15200 --- [http-nio-8081-exec-7] tournament-manager                       : players in tournament pool: 2
+2022-11-04 17:00:56.912  INFO 15200 --- [http-nio-8081-exec-7] tournament 5                             : next round starts
+2022-11-04 17:00:56.913  INFO 15200 --- [http-nio-8081-exec-7] tournament 5                             : next match: [Baguette vs test]
+2022-11-04 17:00:56.917  INFO 15200 --- [http-nio-8081-exec-7] game [5,test,Baguette]                   : started
+2022-11-04 17:00:56.924  INFO 15200 --- [http-nio-8081-exec-7] tournament 5                             : game started
+2022-11-04 17:01:03.147  INFO 15200 --- [Thread-4] client-thread test                       : issues command: 'move 1'
+2022-11-04 17:01:03.336  INFO 15200 --- [Thread-32] client-thread Baguette                   : issues command: 'move 3'
+2022-11-04 17:01:13.346  INFO 15200 --- [Timer-26] game [5,test,Baguette]                   : winner: Baguette; Turn timelimit reached
+2022-11-04 17:01:13.348  INFO 15200 --- [Timer-26] tournament 5                             : game [Baguette vs test] result: Baguette
+2022-11-04 17:01:13.350  INFO 15200 --- [Timer-26] tournament 5                             : finished
+2022-11-04 17:01:50.095  WARN 15200 --- [Thread-32] client-thread Baguette                   : Server exception: Connection reset, disconnecting client
+2022-11-04 17:01:55.462  INFO 15200 --- [main] main                                     : new client connected from /127.0.0.1:4958
+2022-11-04 17:01:55.660  INFO 15200 --- [Thread-36] client-thread <not logged in>            : issues command: 'login Baguette'
+2022-11-04 17:01:55.661  INFO 15200 --- [Thread-36] login-command                            : reviving Baguette from offline player list! Welcome back.
+2022-11-04 17:01:58.948  INFO 15200 --- [http-nio-8081-exec-1] api-controller                           : decoded JWT token: com.auth0.jwt.JWTDecoder@24be98ef
+2022-11-04 17:01:58.948  INFO 15200 --- [http-nio-8081-exec-7] api-controller                           : decoded JWT token: com.auth0.jwt.JWTDecoder@6bf30059
+2022-11-04 17:02:01.490  INFO 15200 --- [http-nio-8081-exec-2] api-controller                           : decoded JWT token: com.auth0.jwt.JWTDecoder@71102af2
+2022-11-04 17:02:01.491  INFO 15200 --- [http-nio-8081-exec-2] tournament-manager                       : start tournament 
+2022-11-04 17:02:01.492  INFO 15200 --- [http-nio-8081-exec-2] tournament-manager                       : tournament state:FINISHED
+2022-11-04 17:02:01.492  INFO 15200 --- [http-nio-8081-exec-2] tournament-manager                       : players in tournament pool: 2
+2022-11-04 17:02:01.493  INFO 15200 --- [http-nio-8081-exec-2] tournament 6                             : next round starts
+2022-11-04 17:02:01.494  INFO 15200 --- [http-nio-8081-exec-2] tournament 6                             : next match: [Baguette vs test]
+2022-11-04 17:02:01.496  INFO 15200 --- [http-nio-8081-exec-2] game [6,Baguette,test]                   : started
+2022-11-04 17:02:01.497  INFO 15200 --- [http-nio-8081-exec-2] tournament 6                             : game started
+2022-11-04 17:02:01.639  INFO 15200 --- [Thread-36] client-thread Baguette                   : issues command: 'move 8'
+2022-11-04 17:02:05.859  INFO 15200 --- [Thread-4] client-thread test                       : issues command: 'move 0'
+2022-11-04 17:02:06.034  INFO 15200 --- [Thread-36] client-thread Baguette                   : issues command: 'move 2'
+2022-11-04 17:02:12.281  INFO 15200 --- [Thread-4] client-thread test                       : issues command: 'move 2'
+2022-11-04 17:02:12.282  INFO 15200 --- [Thread-4] game [6,Baguette,test]                   : winner: Baguette; Player did illegal move
+2022-11-04 17:02:12.284  INFO 15200 --- [Thread-4] tournament 6                             : game [Baguette vs test] result: Baguette
+2022-11-04 17:02:12.284  INFO 15200 --- [Thread-4] tournament 6                             : finished
+2022-11-04 17:02:59.528  WARN 15200 --- [Thread-4] client-thread test                       : Server exception: Connection reset, disconnecting client

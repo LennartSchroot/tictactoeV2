@@ -22,7 +22,9 @@ public class Show {
                 System.out.print("|");
         }
     }
-
+    public void challengeStarted(String opponent, String gameType){
+        System.out.printf("We've been matched with player: %s\n to play a game of %s\n", opponent, gameType);
+    }
     public void showMenu(){
         String msg ="While in game or tournament mode write EXIT and press enter to go back to main \n\n"
                     + "To play a game of Eieren, kaas & boter vs the ai. type 1 and press enter.\n"
