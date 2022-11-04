@@ -1,0 +1,72 @@
+2022-11-04 15:53:50.083  INFO 13464 --- [main] nl.hanze.newgameserver.Main              : Starting Main on Gerco-Desktop with PID 13464 (C:\Users\CreationStation\Documents\Oop\tijdelijk\tictactoeV2\server\server.jar started by CreationStation in C:\Users\CreationStation\Documents\Oop\tijdelijk\tictactoeV2\server)
+2022-11-04 15:53:50.089  INFO 13464 --- [main] nl.hanze.newgameserver.Main              : No active profile set, falling back to default profiles: default
+2022-11-04 15:53:51.799  INFO 13464 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-11-04 15:53:51.816  INFO 13464 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-04 15:53:51.817  INFO 13464 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-11-04 15:53:51.903  INFO 13464 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-04 15:53:51.904  INFO 13464 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1713 ms
+2022-11-04 15:53:52.084  INFO 13464 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientInboundChannelExecutor'
+2022-11-04 15:53:52.088  INFO 13464 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientOutboundChannelExecutor'
+2022-11-04 15:53:52.118  INFO 13464 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'messageBrokerTaskScheduler'
+2022-11-04 15:53:52.194  INFO 13464 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'brokerChannelExecutor'
+2022-11-04 15:53:52.505  INFO 13464 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
+2022-11-04 15:53:52.723  INFO 13464 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-11-04 15:53:52.726  INFO 13464 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2022-11-04 15:53:52.726  INFO 13464 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2022-11-04 15:53:52.728  INFO 13464 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2022-11-04 15:53:52.747  INFO 13464 --- [main] nl.hanze.newgameserver.Main              : Started Main in 3.413 seconds (JVM running for 4.066)
+2022-11-04 15:53:52.755  INFO 13464 --- [main] main                                     : gameserver is now listening on port 7789
+2022-11-04 15:54:22.599  INFO 13464 --- [main] main                                     : new client connected from /127.0.0.1:22251
+2022-11-04 15:54:22.931  INFO 13464 --- [Thread-2] client-thread <not logged in>            : issues command: 'login avenged'
+2022-11-04 15:54:37.813  WARN 13464 --- [Thread-2] client-thread avenged                    : Server exception: Connection reset, disconnecting client
+2022-11-04 15:54:40.267  INFO 13464 --- [SpringContextShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2022-11-04 15:54:40.267  INFO 13464 --- [SpringContextShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2022-11-04 15:54:40.269  INFO 13464 --- [SpringContextShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2022-11-04 15:54:40.332  INFO 13464 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'brokerChannelExecutor'
+2022-11-04 15:54:40.333  INFO 13464 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2022-11-04 15:54:40.334  INFO 13464 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2022-11-04 15:54:40.334  INFO 13464 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'clientInboundChannelExecutor'
+2022-11-04 16:06:36.054  INFO 6460 --- [main] nl.hanze.newgameserver.Main              : Starting Main on Gerco-Desktop with PID 6460 (C:\Users\CreationStation\Documents\Oop\tijdelijk\tictactoeV2\server\server.jar started by CreationStation in C:\Users\CreationStation\Documents\Oop\tijdelijk\tictactoeV2\server)
+2022-11-04 16:06:36.058  INFO 6460 --- [main] nl.hanze.newgameserver.Main              : No active profile set, falling back to default profiles: default
+2022-11-04 16:06:37.958  INFO 6460 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-11-04 16:06:37.981  INFO 6460 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-04 16:06:37.982  INFO 6460 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-11-04 16:06:38.079  INFO 6460 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-04 16:06:38.080  INFO 6460 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1890 ms
+2022-11-04 16:06:38.236  INFO 6460 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientInboundChannelExecutor'
+2022-11-04 16:06:38.240  INFO 6460 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientOutboundChannelExecutor'
+2022-11-04 16:06:38.272  INFO 6460 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'messageBrokerTaskScheduler'
+2022-11-04 16:06:38.359  INFO 6460 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'brokerChannelExecutor'
+2022-11-04 16:06:38.648  INFO 6460 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
+2022-11-04 16:06:38.816  INFO 6460 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-11-04 16:06:38.818  INFO 6460 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2022-11-04 16:06:38.818  INFO 6460 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2022-11-04 16:06:38.819  INFO 6460 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2022-11-04 16:06:38.834  INFO 6460 --- [main] nl.hanze.newgameserver.Main              : Started Main in 3.569 seconds (JVM running for 4.273)
+2022-11-04 16:06:38.842  INFO 6460 --- [main] main                                     : gameserver is now listening on port 7789
+2022-11-04 16:06:46.605  INFO 6460 --- [main] main                                     : new client connected from /127.0.0.1:1218
+2022-11-04 16:06:46.930  INFO 6460 --- [Thread-2] client-thread <not logged in>            : issues command: 'login avenged'
+2022-11-04 16:07:38.370  INFO 6460 --- [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2022-11-04 16:08:38.376  WARN 6460 --- [Thread-2] client-thread avenged                    : Server exception: Connection reset, disconnecting client
+2022-11-04 16:13:10.993  INFO 6460 --- [main] main                                     : new client connected from /127.0.0.1:1230
+2022-11-04 16:13:11.315  INFO 6460 --- [Thread-3] client-thread <not logged in>            : issues command: 'login avenged'
+2022-11-04 16:13:11.316  INFO 6460 --- [Thread-3] login-command                            : reviving avenged from offline player list! Welcome back.
+2022-11-04 16:13:55.567  WARN 6460 --- [Thread-3] client-thread avenged                    : Server exception: Connection reset, disconnecting client
+2022-11-04 16:14:00.067  INFO 6460 --- [main] main                                     : new client connected from /127.0.0.1:1234
+2022-11-04 16:14:00.494  INFO 6460 --- [Thread-4] client-thread <not logged in>            : issues command: 'login avenged'
+2022-11-04 16:14:00.495  INFO 6460 --- [Thread-4] login-command                            : reviving avenged from offline player list! Welcome back.
+2022-11-04 16:14:03.710  INFO 6460 --- [main] main                                     : new client connected from /127.0.0.1:1235
+2022-11-04 16:14:04.144  INFO 6460 --- [Thread-5] client-thread <not logged in>            : issues command: 'login avenged'
+2022-11-04 16:14:04.145  INFO 6460 --- [Thread-5] client-thread <not logged in>            : command exception: 'duplicate name exists'
+2022-11-04 16:14:17.097  INFO 6460 --- [main] main                                     : new client connected from /127.0.0.1:1236
+2022-11-04 16:14:17.525  INFO 6460 --- [Thread-6] client-thread <not logged in>            : issues command: 'login avenged'
+2022-11-04 16:14:17.526  INFO 6460 --- [Thread-6] client-thread <not logged in>            : command exception: 'duplicate name exists'
+2022-11-04 16:15:43.752  WARN 6460 --- [Thread-4] client-thread avenged                    : Server exception: Connection reset, disconnecting client
+2022-11-04 16:15:43.752  WARN 6460 --- [Thread-5] client-thread <not logged in>            : Server exception: Connection reset, disconnecting client
+2022-11-04 16:15:43.752  WARN 6460 --- [Thread-6] client-thread <not logged in>            : Server exception: Connection reset, disconnecting client
+2022-11-04 16:15:48.266  INFO 6460 --- [main] main                                     : new client connected from /127.0.0.1:1242
+2022-11-04 16:15:48.600  INFO 6460 --- [Thread-7] client-thread <not logged in>            : issues command: 'login avenged'
+2022-11-04 16:15:48.601  INFO 6460 --- [Thread-7] login-command                            : reviving avenged from offline player list! Welcome back.
+2022-11-04 16:15:52.352  INFO 6460 --- [main] main                                     : new client connected from /127.0.0.1:1243
+2022-11-04 16:15:52.789  INFO 6460 --- [Thread-8] client-thread <not logged in>            : issues command: 'login avenged'
+2022-11-04 16:15:52.789  INFO 6460 --- [Thread-8] login-command                            : reviving avenged from offline player list! Welcome back.
