@@ -21,6 +21,7 @@ public class Board {
         }
         return true;
     }
+
     public boolean setAtPos(int pos, int value){
         if(checkMove(pos, value)) {
             this.board[pos] = value;
@@ -28,6 +29,15 @@ public class Board {
         }else{
             return false;
         }
+    }
+
+    public void delMove(int pos){ //new function for ai
+        this.board[pos] = 2;
+    }
+
+    public boolean filledIn(int pos){ //new function for ai
+        if (this.board[pos] != 2) { return false; } 
+        else { return true; }
     }
 
     public int getValueAt(int pos){
