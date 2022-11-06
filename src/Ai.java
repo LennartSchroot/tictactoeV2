@@ -87,7 +87,6 @@ public class Ai {
                 return 10 + depth;
             if (enemy == 0)
                 return -10 - depth;
-            board.flush();
         } else if (checkW == 1) {
             if (xoxo == 0)
                 return -10 - depth;
